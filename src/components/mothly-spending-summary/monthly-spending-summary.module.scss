@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subtitle {
+  font-size: calc(var(--default-font-size) * 0.8);
+  color: var(--medium-brown);
+}
+.growth {
+  font-size: 0.8rem;
+  p {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}

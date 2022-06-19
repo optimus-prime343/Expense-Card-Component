@@ -1,0 +1,39 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.chart {
+  position: relative;
+  background-color: var(--soft-red);
+  border-radius: 4px;
+  z-index: 10;
+
+  &::before {
+    content: attr(data-amount);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    height: 20px;
+    border-radius: 4px;
+    background-color: var(--dark-brown);
+    transform: translate(-50%, -2rem);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms ease-in;
+  }
+  &:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -2.5rem);
+  }
+}
+.label {
+  color: var(--medium-brown);
+}

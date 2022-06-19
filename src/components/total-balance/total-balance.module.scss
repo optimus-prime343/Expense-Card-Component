@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--soft-red);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+}
+.subtitle {
+  color: var(--cream);
+}
+.total-amount {
+  color: var(--pale-orange);
+  font-size: calc(var(--default-font-size) * 1.5);
+  font-weight: var(--font-weight-lg);
+}
